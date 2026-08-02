@@ -6,62 +6,75 @@ FraudFusion++ is a machine learning-based fraud detection framework designed for
 
 ## Research Problem
 
-Traditional fraud detection systems often struggle with:
-- New fraud patterns
-- Highly imbalanced transaction data
-- False positive predictions
-
-This research proposes a hybrid approach to improve fraud detection capability.
+Existing studies have explored fraud classification, anomaly detection, hybrid learning, and risk management, but these capabilities are often considered separately. Simply predicting whether a transaction is fraudulent may not be enough in a practical payment system, where it is also important to identify unusual behaviour, assess transaction risk, and determine an appropriate action. FraudFusion++ addresses this gap by combining Isolation Forest, CatBoost, and an Adaptive Risk Decision Engine (ARDE) to provide risk-based decision support beyond simple fraud prediction.
 
 ## Proposed Framework
 
 FraudFusion++ consists of three major components:
 
-1. Isolation Forest
-   - Detects unusual transaction behaviour
-   - Generates anomaly scores
+### Isolation Forest
 
-2. CatBoost Classifier
-   - Learns fraud patterns from labelled transactions
-   - Classifies transactions as fraud/genuine
+* Detects unusual transaction behaviour
+* Identifies anomalous transactions
+* Generates normalized anomaly scores
 
-3. Adaptive Risk Decision Engine
-   - Combines model output and transaction behaviour
-   - Generates final risk decisions
+### CatBoost Classifier
 
-## Dataset Features
+* Learns fraud patterns from labelled transactions
+* Uses transaction features along with anomaly-related information
+* Classifies transactions as fraud or genuine
 
-| Feature | Description |
-|-|-|
-| Amount | Transaction value |
-| Merchant | Transaction receiver |
-| Device | Device information |
-| Location | Transaction location |
-| Payment Mode | UPI/Card/etc |
-| Transaction Time | Transaction timestamp |
-| Fraud | Target label |
+### Adaptive Risk Decision Engine (ARDE)
+
+* Combines fraud probability and anomaly score with transaction risk factors
+* Considers transaction amount and timing during risk assessment
+* Determines the overall risk level and recommended action
+
+## Dataset
+
+The research uses a synthetic digital payment transaction dataset created for experimental evaluation. The dataset simulates transaction behaviour for fraud detection research and does not contain real customer or financial information.
 
 ## Results
 
-Accuracy: 97.86%
+The proposed FraudFusion++ framework achieved an accuracy of **96.93%**.
 
-Evaluation Metrics:
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
+### Evaluation Metrics
+
+| Metric    |  Score |
+| --------- | -----: |
+| Accuracy  | 96.93% |
+| Precision | 85.19% |
+| Recall    | 95.83% |
+| F1-Score  | 90.20% |
+| ROC-AUC   | 98.98% |
 
 ## Technologies Used
 
-Python  
-Pandas  
-NumPy  
-Scikit-learn  
-CatBoost  
-Matplotlib  
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* CatBoost
+* Matplotlib
 
 ## Research Contribution
 
-- Hybrid anomaly detection and classification framework
-- Risk-based decision mechanism
-- Behaviour-based fraud analysis
+* Combines **Isolation Forest** for anomaly detection and **CatBoost** for fraud classification.
+* Uses **ARDE** to combine fraud probability, anomaly score, transaction amount, and timing for risk assessment.
+* Extends fraud detection from simple **fraud/genuine prediction** to **risk-based decision support** with recommended actions.
+
+## Limitations
+
+* The framework is evaluated using a synthetic dataset.
+* Periodic threshold tuning may be required for the risk decision mechanism.
+* Combining multiple detection techniques introduces slightly higher computational complexity.
+* Performance may vary when applied to real-world transaction data.
+
+## Future Work
+
+* Evaluation using larger real-world datasets
+* Continuous monitoring of model performance
+* Automated threshold adaptation
+* Detection of evolving fraud patterns
+* Integration with real-time digital payment systems
+* Exploration of additional machine learning techniques
