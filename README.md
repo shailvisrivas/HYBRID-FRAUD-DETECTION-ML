@@ -42,11 +42,11 @@ The proposed FraudFusion++ framework achieved an accuracy of **96.93%**.
 
 | Metric    |  Score |
 | --------- | -----: |
-| Accuracy  | 96.93% |
-| Precision | 85.19% |
+| Accuracy  | 97.55% |
+| Precision | 88.46% |
 | Recall    | 95.83% |
-| F1-Score  | 90.20% |
-| ROC-AUC   | 98.98% |
+| F1-Score  | 92.00% |
+| ROC-AUC   | 98.95% |
 
 ## Technologies Used
 
