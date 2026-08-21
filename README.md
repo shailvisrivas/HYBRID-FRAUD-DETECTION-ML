@@ -10,7 +10,7 @@ Existing studies have explored fraud classification, anomaly detection, hybrid l
 
 ## Proposed Framework
 
-FraudFusion++ consists of three major components:
+It consists of three major components:
 
 ### Isolation Forest
 
