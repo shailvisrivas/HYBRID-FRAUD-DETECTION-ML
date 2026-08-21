@@ -1,8 +1,8 @@
-# FraudGuard: A Hybrid Framework for Digital Payment Fraud Detection
+A Hybrid Framework for Digital Payment Fraud Detection
 
 ## Abstract
 
-FraudFusion++ is a machine learning-based fraud detection framework designed for digital payment systems. The framework combines unsupervised anomaly detection using Isolation Forest, supervised fraud classification using CatBoost, and an Adaptive Risk Decision Engine (ARDE) for intelligent transaction risk assessment.
+Fraud detection framework designed for digital payment systems. The framework combines unsupervised anomaly detection using Isolation Forest, supervised fraud classification using CatBoost, and an Adaptive Risk Decision Engine (ARDE) for intelligent transaction risk assessment.
 
 ## Research Problem
 
@@ -36,7 +36,7 @@ The research uses a synthetic digital payment transaction dataset created for ex
 
 ## Results
 
-The proposed FraudFusion++ framework achieved an accuracy of **96.93%**.
+The proposed framework achieved an accuracy of **97.55%**.
 
 ### Evaluation Metrics
 
