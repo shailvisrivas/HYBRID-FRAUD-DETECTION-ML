@@ -74,7 +74,6 @@ The proposed framework achieved an accuracy of **97.55%**.
 
 * Evaluation using larger real-world datasets
 * Continuous monitoring of model performance
-* Automated threshold adaptation
 * Detection of evolving fraud patterns
 * Integration with real-time digital payment systems
 * Exploration of additional machine learning techniques
