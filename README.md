@@ -2,7 +2,7 @@ A Hybrid Framework for Digital Payment Fraud Detection
 
 ## Abstract
 
-Fraud detection framework designed for digital payment systems. The framework combines unsupervised anomaly detection using Isolation Forest, supervised fraud classification using CatBoost, and an Adaptive Risk Decision Engine (ARDE) for intelligent transaction risk assessment.
+A hybrid Fraud detection framework designed for digital payment systems. The framework combines unsupervised anomaly detection using Isolation Forest, supervised fraud classification using CatBoost, and an Adaptive Risk Decision Engine (ARDE) for intelligent transaction risk assessment.
 
 ## Research Problem
 
