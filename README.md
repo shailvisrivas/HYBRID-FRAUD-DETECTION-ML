@@ -6,7 +6,7 @@ A Hybrid Fraud Detection framework is designed for digital payment systems. The 
 
 ## Research Problem
 
-Existing studies have explored fraud classification, anomaly detection, hybrid learning, and risk management, but these capabilities are often considered separately. Simply predicting whether a transaction is fraudulent may not be enough in a practical payment system, where it is also important to identify unusual behaviour, assess transaction risk, and determine an appropriate action. FraudFusion++ addresses this gap by combining Isolation Forest, CatBoost, and an Adaptive Risk Decision Engine (ARDE) to provide risk-based decision support beyond simple fraud prediction.
+Existing studies have explored fraud classification, anomaly detection, hybrid learning, and risk management, but these capabilities are often considered separately. Simply predicting whether a transaction is fraudulent may not be enough in a practical payment system, where it is also important to identify unusual behaviour, assess transaction risk, and determine an appropriate action. Our framework addresses this gap by combining Isolation Forest, CatBoost, and an Adaptive Risk Decision Engine (ARDE) to provide risk-based decision support beyond simple fraud prediction.
 
 ## Proposed Framework
 
