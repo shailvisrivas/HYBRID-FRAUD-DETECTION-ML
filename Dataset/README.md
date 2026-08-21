@@ -1,6 +1,6 @@
 # Dataset
 
-The dataset used in this research is a **synthetic digital payment transaction dataset** created for experimental evaluation of the FraudFusion++ framework.
+The dataset used in this research is a **synthetic digital payment transaction dataset** created for experimental evaluation of the framework.
 
 It was designed to simulate transaction patterns relevant to digital payment fraud detection and to evaluate the performance of the proposed hybrid framework.
 
