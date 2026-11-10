@@ -1,0 +1,7 @@
+numpy
+pandas
+scikit-learn
+catboost
+matplotlib
+seaborn
+tensorflow   # only for the LSTM baseline in arde_part3_baselines_unseen.py
